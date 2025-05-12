@@ -72,18 +72,22 @@ let gente = [
 
 //Crea un array con la gente mayor de 25 años y muéstralo por consola
 
+let genteMayor =[];
+
 gente.forEach((persona) => {
     if (persona.edad > 25) {
         console.log(persona);
+        genteMayor.push(persona);
     }
 }
 );
 
 //Crea un array con la gente que empieza por J.
-
+ let genteJ = [];
 gente.forEach((personas) => {
     if (personas.nombre.startsWith("J")) {
         console.log(personas);
+        genteJ.push(personas);
     }
 }
 );
@@ -92,15 +96,20 @@ gente.forEach((personas) => {
 /*3. Map
 Utilizando el array de antes crea un array con la gente mayor de 25 años y muéstralo por consola.
 Crea un array con la gente que empieza por J. */
+let genteMayor2 = [];
+
 gente.map((persona) => {
     if (persona.edad > 25) {
         console.log(persona);
+        genteMayor2.push(persona);
     }
 }
 );
+let genteJ2 = [];
 gente.map((personas) => {
     if (personas.nombre.startsWith("J")) {
         console.log(personas);
+        genteJ2.push(personas);
     }
 }
 );
